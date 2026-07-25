@@ -559,6 +559,15 @@ footer {
   .ventures-grid, .skills-grid { grid-template-columns: 1fr; }
   .about-visual { display: none; }
 }
+
+.lang-toggle{display:flex;align-items:center;gap:.4rem}
+.lang-btn{background:transparent;border:1px solid rgba(248,246,241,.2);color:rgba(248,246,241,.6);padding:.3rem .6rem;border-radius:4px;font-size:.7rem;font-weight:600;cursor:pointer;font-family:var(--body);transition:all .2s;letter-spacing:.05em}
+.lang-btn:hover,.lang-btn.active{background:var(--teal);border-color:var(--teal);color:white}
+[data-lang]{display:none}
+[data-lang].active{display:block}
+span[data-lang]{display:none}
+span[data-lang].active{display:inline}
+
 </style>
 </head>
 <body>
@@ -572,6 +581,12 @@ footer {
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')" id="btn-en">🇺🇸 EN</button>
+        <button class="lang-btn" onclick="setLang('fr')" id="btn-fr">🇫🇷 FR</button>
+        <button class="lang-btn" onclick="setLang('ht')" id="btn-ht">🇭🇹 HT</button>
+      </div>
 </nav>
 
 <!-- HERO -->
@@ -823,6 +838,21 @@ const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { rootMargin: '0px 0px -60px 0px' });
 reveals.forEach(r => io.observe(r));
+</script>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('btn-'+lang).classList.add('active');
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.classList.remove('active');
+    if(el.getAttribute('data-lang')===lang) el.classList.add('active');
+  });
+  localStorage.setItem('lang',lang);
+}
+document.addEventListener('DOMContentLoaded',function(){
+  setLang(localStorage.getItem('lang')||'en');
+});
 </script>
 </body>
 </html>
