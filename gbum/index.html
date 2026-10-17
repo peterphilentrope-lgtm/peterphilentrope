@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,47 +7,67 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-HCYDQXJ1WH');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Global Black Unity Movement (GBUM)</title>
-<meta name="description" content="GBUM: Unity Without Uniformity. Progress Through Cooperation. Connecting Black communities worldwide, starting in Haiti.">
-<meta property="og:title" content="Global Black Unity Movement (GBUM)">
-<meta property="og:description" content="Unity Without Uniformity. Progress Through Cooperation.">
+<title>GBUM | Global Black Unity Movement</title>
+<meta name="description" content="GBUM, the Global Black Unity Movement: One People. Shared Progress. A Stronger Future. An emerging global movement for Black unity, shared opportunity, and collective progress.">
+<meta property="og:title" content="GBUM | Global Black Unity Movement">
+<meta property="og:description" content="One People. Shared Progress. A Stronger Future.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://peterphilentrope.com/gbum/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-/* Tokens copied from the main site (peterphilentrope.com) so GBUM matches it */
-:root{--black:#0c1f35;--dark:#122840;--dark2:#1a3350;--white:#f5f0e6;--cream:#ece5d6;--teal:#1a6b5c;--teal2:#22876f;--teallt:#4db89e;--gold:#d4a832;--muted:#b9b2a2;--border:rgba(245,240,230,.14);--focus:#f0c84a;--display:"Playfair Display",Georgia,serif;--body:"DM Sans",system-ui,sans-serif}
+/* Tokens match the main site (peterphilentrope.com). Edit colors here. */
+:root{--black:#0c1f35;--dark:#122840;--dark2:#1a3350;--white:#f5f0e6;--cream:#ece5d6;--teal:#1a6b5c;--teal2:#22876f;--teallt:#4db89e;--gold:#d4a832;--goldlt:#f0c84a;--muted:#b9b2a2;--border:rgba(245,240,230,.14);--focus:#f0c84a;--display:"Playfair Display",Georgia,serif;--body:"DM Sans",system-ui,sans-serif}
+[hidden]{display:none!important}
 *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}
-body{margin:0;background:var(--black);color:var(--white);font:400 17px/1.65 var(--body);overflow-x:hidden}
-a{color:var(--teallt)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+body{margin:0;background:var(--black);color:var(--white);font:400 17px/1.7 var(--body);overflow-x:hidden}
+a{color:var(--goldlt)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .skip{position:absolute;left:-999px;top:0;background:#000;color:#fff;padding:.6rem 1rem;z-index:200}.skip:focus{left:0}
-.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 header.top{border-bottom:1px solid var(--border);background:var(--dark);position:sticky;top:0;z-index:100}
-header.top .wrap{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding-top:.7rem;padding-bottom:.7rem}
-nav a{margin-right:1.1rem;text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--white);opacity:.8}
-nav a:hover{opacity:1}
+header.top .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1rem;align-items:center;justify-content:space-between;padding-top:.6rem;padding-bottom:.6rem}
+nav{display:flex;flex-wrap:wrap;gap:.2rem 1.1rem}
+nav a{text-decoration:none;font-size:.76rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--white);opacity:.85;padding:.35rem 0}
+nav a:hover{opacity:1;color:var(--goldlt)}
 .langsw{display:flex;gap:.4rem}
 .langsw button{min-width:44px;min-height:44px;border:1px solid var(--border);background:transparent;color:var(--white);border-radius:8px;font:600 .85rem var(--body);cursor:pointer}
-.langsw button[aria-pressed=true]{background:var(--teal);border-color:var(--teal2)}
-.hero{padding:4rem 0 2.8rem}
-.hero h1{font:900 clamp(2.1rem,6vw,3.6rem)/1.08 var(--display);margin:.3rem 0 .7rem}
-.tag{font:italic 700 1.2rem var(--display);color:var(--gold);margin:0 0 1rem}
-section{padding:2.4rem 0;border-top:1px solid var(--border)}
-h2{font:700 1.8rem var(--display);margin:0 0 .8rem}
-.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.card{background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:1.1rem}
-.card h3{margin:.1rem 0 .4rem;font:700 1.1rem var(--display)}
-.note{font-size:.95rem;color:var(--muted)}
-.btn{display:inline-block;min-height:44px;padding:.7rem 1.2rem;background:var(--teal);color:#fff;border:0;border-radius:8px;font:600 1rem var(--body);text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--teal2)}.btn[disabled]{opacity:.6;cursor:not-allowed}
-form{display:grid;gap:.9rem;max-width:640px}
-label{font-weight:600;display:block;margin-bottom:.2rem}
-input,select,textarea{width:100%;min-height:44px;padding:.55rem .7rem;border:1px solid var(--border);border-radius:8px;background:var(--dark2);color:var(--white);font:inherit}
+.langsw button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#0c1f35}
+.hero{padding:4.5rem 0 3.2rem;text-align:left}
+.abbr{font:900 clamp(3.2rem,12vw,6.5rem)/1 var(--display);color:var(--gold);letter-spacing:.04em;margin:0}
+.hero h1{font:700 clamp(1.3rem,3.6vw,2rem)/1.2 var(--display);margin:.2rem 0 1.2rem;letter-spacing:.02em}
+.tag{font:italic 700 clamp(1.35rem,3.4vw,1.9rem)/1.3 var(--display);color:var(--white);margin:0 0 1rem;max-width:720px}
+.lead{max-width:680px;color:var(--cream)}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.btn{display:inline-block;min-height:46px;padding:.75rem 1.4rem;background:var(--gold);color:#0c1f35;border:2px solid var(--gold);border-radius:8px;font:700 1rem var(--body);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--goldlt);border-color:var(--goldlt)}
+.btn.alt{background:transparent;color:var(--goldlt)}.btn.alt:hover{background:rgba(212,168,50,.14)}
+.btn[disabled]{opacity:.6;cursor:not-allowed}
+.stage{display:inline-block;margin-top:1.6rem;padding:.35rem .9rem;border:1px solid var(--gold);border-radius:999px;font-size:.88rem;color:var(--goldlt)}
+section{padding:3rem 0;border-top:1px solid var(--border)}
+h2{font:700 clamp(1.5rem,3.6vw,2.1rem)/1.2 var(--display);margin:0 0 1rem}
+.kick{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 .4rem}
+.col{max-width:720px}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--dark);border:1px solid var(--border);border-radius:12px;padding:1.2rem}
+.card h3{margin:.6rem 0 .4rem;font:700 1.08rem/1.3 var(--display)}
+.card p{margin:0;color:var(--cream);font-size:.97rem}
+.ico{width:38px;height:38px;color:var(--gold)}
+.num{font:700 .8rem var(--body);color:var(--gold);letter-spacing:.1em}
+.note{font-size:.93rem;color:var(--muted)}
+ul.plain{padding-left:1.1rem;margin:.6rem 0}ul.plain li{margin:.35rem 0}
+form{display:grid;gap:1rem;max-width:680px;margin-top:1rem}
+label,legend{font-weight:600}
+.opt{font-weight:400;color:var(--muted);font-size:.88rem}
+input[type=text],input[type=email],textarea{width:100%;min-height:46px;padding:.6rem .75rem;border:1px solid var(--border);border-radius:8px;background:var(--dark2);color:var(--white);font:inherit}
+fieldset{border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem}
+.chk{display:flex;gap:.6rem;align-items:flex-start;margin:.35rem 0}.chk input{width:22px;height:22px;margin-top:.3rem;flex:none}.chk label{font-weight:400}
 .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
-.chk{display:flex;gap:.6rem;align-items:flex-start}.chk input{width:24px;min-height:24px;margin-top:.25rem}.chk label{font-weight:400}
-.status{padding:.8rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--dark)}
+.status{padding:.8rem 1rem;border-radius:8px;border:1px solid var(--border);background:var(--dark);margin:1rem 0}
 .status.err{border-color:#e07a6e}.status.ok{border-color:var(--teallt)}
-footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted);font-size:.95rem}
+.priv{font-size:.9rem;color:var(--muted);background:var(--dark);border:1px solid var(--border);border-radius:8px;padding:.8rem 1rem}
+.close{text-align:center}.close .col{margin:0 auto}
+footer{border-top:1px solid var(--border);padding:2rem 0 3rem;color:var(--muted);font-size:.92rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -56,10 +77,11 @@ footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted);font
  <div class="wrap">
   <nav aria-label="GBUM">
    <a href="/" data-i18n="navHome">Home</a>
+   <a href="#vision" data-i18n="navVision">Vision</a>
    <a href="#mission" data-i18n="navMission">Mission</a>
    <a href="#pillars" data-i18n="navPillars">Pillars</a>
-   <a href="#haiti" data-i18n="navHaiti">Haiti First</a>
-   <a href="#volunteer" data-i18n="navVol">Volunteer</a>
+   <a href="#principles" data-i18n="navPrin">Principles</a>
+   <a href="#involved" data-i18n="navInv">Get Involved</a>
   </nav>
   <div class="langsw" role="group" aria-label="Language / Langue / Lang">
    <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
@@ -72,161 +94,280 @@ footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted);font
 <main id="main">
 <div class="wrap">
  <div class="hero">
-  <p class="note" data-i18n="eyebrow">A proposed movement, now forming</p>
+  <p class="abbr">GBUM</p>
   <h1 data-i18n="title">Global Black Unity Movement</h1>
-  <p class="tag" data-i18n="tagline">Unity Without Uniformity. Progress Through Cooperation.</p>
-  <p data-i18n="heroP">GBUM aims to connect Black communities in Haiti, Africa, the Caribbean, the Americas, Europe, and the wider diaspora through political accountability, economic cooperation, and community development.</p>
-  <p><a class="btn" href="#volunteer" data-i18n="ctaVol">Express volunteer interest</a></p>
+  <p class="tag" data-i18n="tagline">One People. Shared Progress. A Stronger Future.</p>
+  <p class="lead" data-i18n="heroP">An emerging global movement bringing people together around Black unity, shared opportunity, and collective progress across generations.</p>
+  <div class="cta">
+   <a class="btn" href="#mission" data-i18n="ctaMission">Explore Our Mission</a>
+   <a class="btn alt" href="#involved" data-i18n="ctaInv">Get Involved</a>
+  </div>
+  <p class="stage" data-i18n="stage">Current stage: Foundational development.</p>
  </div>
 
+ <section id="vision" aria-labelledby="h-vision">
+  <p class="kick" data-i18n="vKick">Our vision</p>
+  <h2 id="h-vision" data-i18n="vH">A More Connected and Empowered Global Community</h2>
+  <div class="col">
+   <p data-i18n="vP1">We envision a world in which Black people and communities are connected across borders, respected in their diversity, and equipped to create lasting progress for present and future generations.</p>
+   <p data-i18n="vP2">We believe that meaningful unity grows through trust, shared learning, cooperation, opportunity, and a willingness to work together while respecting our differences.</p>
+  </div>
+ </section>
+
  <section id="mission" aria-labelledby="h-mission">
-  <h2 id="h-mission" data-i18n="missionH">Mission</h2>
-  <p data-i18n="missionP">To connect Black communities across borders so that they can hold power to account, cooperate economically, and build up their own communities, while respecting that each community has its own history, culture, and priorities.</p>
-  <h2 data-i18n="visionH">Vision</h2>
-  <p data-i18n="visionP">A world where Black communities are connected by shared purpose and mutual respect, and where cooperation, not uniformity, drives progress.</p>
+  <p class="kick" data-i18n="mKick">Our mission</p>
+  <h2 id="h-mission" data-i18n="mH">Turning Unity Into Meaningful Action</h2>
+  <div class="col">
+   <p data-i18n="mP1">The mission of the Global Black Unity Movement is to encourage global Black solidarity and constructive collaboration across the many areas of life that shape our future.</p>
+   <p data-i18n="mP2">Through dialogue, education, entrepreneurship, leadership development, cultural exchange, community initiatives, and responsible partnerships, GBUM aims to help transform shared aspirations into practical action.</p>
+   <p data-i18n="mP3">We are building the foundation for a movement that values both what unites us and the different experiences that make our communities unique.</p>
+  </div>
  </section>
 
  <section id="pillars" aria-labelledby="h-pillars">
-  <h2 id="h-pillars" data-i18n="pillarsH">Three pillars</h2>
-  <div class="grid">
-   <div class="card"><h3 data-i18n="p1H">Political accountability</h3><p data-i18n="p1P">Encouraging transparency, civic participation, and responsible leadership in the places where we work.</p></div>
-   <div class="card"><h3 data-i18n="p2H">Economic cooperation</h3><p data-i18n="p2P">Exploring ways for Black communities and businesses to share knowledge, trade, and opportunity across regions.</p></div>
-   <div class="card"><h3 data-i18n="p3H">Community development</h3><p data-i18n="p3P">Supporting education and practical community needs, led by the people who live them.</p></div>
+  <p class="kick" data-i18n="plKick">Proposed foundation</p>
+  <h2 id="h-pillars" data-i18n="plH">Our Seven Pillars</h2>
+  <p class="note col" data-i18n="plNote">These are the movement's proposed foundational pillars, not seven established operational programs.</p>
+  <div class="grid" style="margin-top:1.2rem">
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M2 10l10-7 10 7"/></svg><p class="num">01</p><h3 data-i18n="p1H">Political Empowerment and Civic Participation</h3><p data-i18n="p1P">Encouraging civic education, responsible leadership, informed participation, representation, human rights, and constructive community advocacy.</p></article>
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M6 21v-7M11 21V6M16 21v-10M21 21V9"/></svg><p class="num">02</p><h3 data-i18n="p2H">Economic Empowerment and Ownership</h3><p data-i18n="p2P">Promoting entrepreneurship, financial literacy, professional networks, mentorship, job creation, responsible investment, and opportunities for Black-owned businesses to connect globally.</p></article>
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 21V5M9 7h6"/></svg><p class="num">03</p><h3 data-i18n="p3H">Education, Knowledge, and Innovation</h3><p data-i18n="p3P">Supporting educational opportunity, youth development, mentorship, digital skills, scientific advancement, research, and access to knowledge.</p></article>
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.3 4.7 1.6 7.2L12 17.8 5.7 21.5l1.6-7.2L2 9.6 9 9z"/></svg><p class="num">04</p><h3 data-i18n="p4H">Culture, Identity, and Heritage</h3><p data-i18n="p4P">Celebrating the histories, languages, traditions, creativity, and achievements of African peoples and the global Black diaspora while respecting the diversity within our communities.</p></article>
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg><p class="num">05</p><h3 data-i18n="p5H">Family and Community Wellbeing</h3><p data-i18n="p5P">Promoting strong families, community care, health education, support for children and elders, and practical responses to local needs.</p></article>
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><p class="num">06</p><h3 data-i18n="p6H">Global Collaboration and Connection</h3><p data-i18n="p6P">Building opportunities for people, professionals, educators, entrepreneurs, artists, and community groups to connect, exchange knowledge, and collaborate across borders.</p></article>
+   <article class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 21h14M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg><p class="num">07</p><h3 data-i18n="p7H">Justice, Dignity, and Sustainable Development</h3><p data-i18n="p7P">Encouraging equal human dignity, fair opportunity, peaceful problem-solving, environmental responsibility, community resilience, and sustainable progress.</p></article>
   </div>
- </section>
-
- <section id="haiti" aria-labelledby="h-haiti">
-  <h2 id="h-haiti" data-i18n="haitiH">Haiti first</h2>
-  <p data-i18n="haitiP">GBUM intends to start in Haiti, beginning with education and practical community support, and to learn from that work before growing to other regions. No programs, results, or numbers are claimed here, because the movement is at the beginning.</p>
  </section>
 
  <section id="principles" aria-labelledby="h-prin">
-  <h2 id="h-prin" data-i18n="prinH">Principles</h2>
-  <ul>
-   <li data-i18n="pr1">Unity without uniformity: we cooperate across differences.</li>
-   <li data-i18n="pr2">Progress through cooperation, not rivalry.</li>
-   <li data-i18n="pr3">Honesty: we do not claim what has not happened.</li>
-   <li data-i18n="pr4">Community-led: local voices lead local work.</li>
-   <li data-i18n="pr5">Respect for every language, including Haitian Creole, French, and English.</li>
-  </ul>
- </section>
-
- <section id="related" aria-labelledby="h-rel">
-  <h2 id="h-rel" data-i18n="relH">Related, separate initiatives</h2>
+  <p class="kick" data-i18n="prKick">Our principles</p>
+  <h2 id="h-prin" data-i18n="prH">The Principles That Keep Us United</h2>
   <div class="grid">
-   <div class="card"><h3>FatherLeader Foundation</h3><p data-i18n="rel1">An existing, separate initiative supporting Haitian children's education. GBUM is a separate effort. This page does not imply ownership, control, legal affiliation, endorsement, or formal partnership.</p><a href="https://fatherleaderfoundation.org" rel="noopener">fatherleaderfoundation.org</a></div>
-   <div class="card"><h3>HaitiCard</h3><p data-i18n="rel2">An existing, separate fintech initiative focused on digital payments in Haiti. GBUM is a separate effort. This page does not imply ownership, control, legal affiliation, endorsement, or formal partnership.</p></div>
+   <article class="card"><p class="num">1</p><h3 data-i18n="pr1H">Unity Without Uniformity</h3><p data-i18n="pr1P">We can share a purpose without sharing every opinion.</p></article>
+   <article class="card"><p class="num">2</p><h3 data-i18n="pr2H">Dignity and Mutual Respect</h3><p data-i18n="pr2P">Every person deserves respect and equal human dignity.</p></article>
+   <article class="card"><p class="num">3</p><h3 data-i18n="pr3H">Collective Progress</h3><p data-i18n="pr3P">We seek opportunities that strengthen communities as well as individuals.</p></article>
+   <article class="card"><p class="num">4</p><h3 data-i18n="pr4H">Self-Determination and Responsibility</h3><p data-i18n="pr4P">We encourage the skills, leadership, institutions, and resources needed to shape our future.</p></article>
+   <article class="card"><p class="num">5</p><h3 data-i18n="pr5H">Integrity and Transparency</h3><p data-i18n="pr5P">We value honesty in leadership, funding, commitments, and results.</p></article>
+   <article class="card"><p class="num">6</p><h3 data-i18n="pr6H">Peaceful and Constructive Action</h3><p data-i18n="pr6P">We pursue progress through learning, cooperation, community service, entrepreneurship, and lawful civic participation.</p></article>
   </div>
  </section>
 
- <section id="roles" aria-labelledby="h-roles">
-  <h2 id="h-roles" data-i18n="rolesH">Proposed founding volunteer roles</h2>
-  <p class="note" data-i18n="rolesNote">These roles are proposals only. No one has been appointed.</p>
-  <div class="grid">
-   <div class="card"><h3 data-i18n="r1">Haiti education coordinator</h3></div>
-   <div class="card"><h3 data-i18n="r2">Translation lead (English, French, Haitian Creole)</h3></div>
-   <div class="card"><h3 data-i18n="r3">Web and digital volunteer</h3></div>
-   <div class="card"><h3 data-i18n="r4">Community outreach lead</h3></div>
-   <div class="card"><h3 data-i18n="r5">Research and accountability analyst</h3></div>
-   <div class="card"><h3 data-i18n="r6">Diaspora liaison</h3></div>
+ <section id="today" aria-labelledby="h-today">
+  <p class="kick" data-i18n="tKick">Where we are today</p>
+  <h2 id="h-today" data-i18n="tH">A Movement in the Making</h2>
+  <div class="col">
+   <p data-i18n="tP1">GBUM is at the beginning of its journey. We are developing our founding principles, refining our vision, and exploring how people who share this mission can work together.</p>
+   <p data-i18n="tP2">We believe a credible movement should grow through trust, participation, accountability, and meaningful action, not promises alone.</p>
+   <p data-i18n="tP3">Our next step is to connect with people who share this vision, learn from their experiences, and identify practical opportunities to turn global unity into community-level progress.</p>
+   <p class="stage" data-i18n="stage">Current stage: Foundational development.</p>
   </div>
  </section>
 
- <section id="volunteer" aria-labelledby="h-vol">
-  <h2 id="h-vol" data-i18n="volH">Volunteer interest</h2>
-  <p data-i18n="volP">Interested in helping at the founding stage? Tell us a little about yourself. This is an expression of interest, not a commitment.</p>
+ <section id="involved" aria-labelledby="h-inv">
+  <p class="kick" data-i18n="iKick">Get involved</p>
+  <h2 id="h-inv" data-i18n="iH">Help Shape What Comes Next</h2>
+  <div class="col">
+   <p data-i18n="iP">GBUM's future will be shaped by people who believe that unity should lead to meaningful progress. Whether your experience is in education, business, technology, community service, culture, leadership, or another field, your perspective can contribute to the conversation.</p>
+   <ul class="plain">
+    <li data-i18n="i1">Follow the movement's development.</li>
+    <li data-i18n="i2">Share ideas and feedback.</li>
+    <li data-i18n="i3">Contribute skills or professional experience.</li>
+    <li data-i18n="i4">Explore future volunteer opportunities.</li>
+    <li data-i18n="i5">Discuss potential community initiatives.</li>
+    <li data-i18n="i6">Help build connections with people who share the mission.</li>
+   </ul>
+   <p class="note" data-i18n="iNote">These are invitations to express interest, not guarantees that formal opportunities or programs are already available.</p>
+  </div>
+
   <div id="formStatus" class="status" role="status" aria-live="polite" hidden></div>
-  <form id="volForm" novalidate hidden>
+  <form id="interestForm" novalidate hidden>
    <div class="hp" aria-hidden="true"><label>Leave blank<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-   <div><label for="f-name" data-i18n="fName">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
-   <div><label for="f-email" data-i18n="fEmail">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
-   <div><label for="f-loc" data-i18n="fLoc">Country or region</label><input id="f-loc" name="location" autocomplete="country-name"></div>
-   <div><label for="f-role" data-i18n="fRole">Role of interest</label>
-    <select id="f-role" name="role"><option value="" data-i18n="fAny">Not sure yet</option><option data-i18n="r1">Haiti education coordinator</option><option data-i18n="r2">Translation lead</option><option data-i18n="r3">Web and digital volunteer</option><option data-i18n="r4">Community outreach lead</option><option data-i18n="r5">Research and accountability analyst</option><option data-i18n="r6">Diaspora liaison</option></select></div>
-   <div><label for="f-lang" data-i18n="fLang">Languages you speak</label><input id="f-lang" name="languages"></div>
-   <div><label for="f-msg" data-i18n="fMsg">How would you like to help?</label><textarea id="f-msg" name="message" rows="4" maxlength="1500"></textarea></div>
-   <div class="chk"><input id="f-consent" name="consent" type="checkbox" required><label for="f-consent" data-i18n="fConsent">I agree that my details may be used only to contact me about GBUM volunteering.</label></div>
+   <div><label for="f-name"><span data-i18n="fName">Name</span> <span class="opt">(<span data-i18n="req">required</span>)</span></label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
+   <div><label for="f-email"><span data-i18n="fEmail">Email address</span> <span class="opt">(<span data-i18n="req">required</span>)</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+   <div><label for="f-country"><span data-i18n="fCountry">Country or region</span> <span class="opt">(<span data-i18n="optl">optional</span>)</span></label><input id="f-country" name="country" type="text" autocomplete="country-name"></div>
+   <fieldset><legend data-i18n="fAreas">Areas of interest</legend>
+    <div class="chk"><input id="a1" type="checkbox" name="interests" value="Following GBUM's development"><label for="a1" data-i18n="a1">Following GBUM's development</label></div>
+    <div class="chk"><input id="a2" type="checkbox" name="interests" value="Sharing ideas and feedback"><label for="a2" data-i18n="a2">Sharing ideas and feedback</label></div>
+    <div class="chk"><input id="a3" type="checkbox" name="interests" value="Contributing skills or experience"><label for="a3" data-i18n="a3">Contributing skills or experience</label></div>
+    <div class="chk"><input id="a4" type="checkbox" name="interests" value="Future volunteer opportunities"><label for="a4" data-i18n="a4">Future volunteer opportunities</label></div>
+    <div class="chk"><input id="a5" type="checkbox" name="interests" value="Community initiative ideas"><label for="a5" data-i18n="a5">Community initiative ideas</label></div>
+    <div class="chk"><input id="a6" type="checkbox" name="interests" value="Connecting with people who share the mission"><label for="a6" data-i18n="a6">Connecting with people who share the mission</label></div>
+   </fieldset>
+   <div><label for="f-msg"><span data-i18n="fMsg">What would you like to contribute or see GBUM accomplish?</span> <span class="opt">(<span data-i18n="optl">optional</span>)</span></label><textarea id="f-msg" name="message" rows="4" maxlength="1500"></textarea></div>
+   <p class="priv" data-i18n="priv">Privacy notice: We will use your name, email address, and answers only to contact you about GBUM and to understand what people want from this movement. We will not publish your submission or personal information. Submissions are sent to the site owner through a form service. Please do not share sensitive personal details.</p>
+   <div class="chk"><input id="f-consent" name="consent" type="checkbox" required><label for="f-consent" data-i18n="fConsent">I have read the privacy notice and agree to be contacted about GBUM.</label></div>
    <div><button class="btn" type="submit" data-i18n="fSend">Send</button></div>
   </form>
-  <p id="fallback" class="note" hidden><span data-i18n="fbText">The online form is not active yet. For now you can reach out through the contact link on the main site:</span> <a href="https://mail.google.com/mail/?view=cm&to=pete@fatherleaderfoundation.org&su=GBUM%20volunteer%20interest" rel="noopener" data-i18n="fbLink">Write to Peter</a></p>
+  <p id="fallback" class="priv" hidden><span data-i18n="fbText">The interest form is not active yet, so nothing can be submitted here. For now, you can reach out through the contact link on the main site:</span> <a href="https://mail.google.com/mail/?view=cm&to=pete@fatherleaderfoundation.org&su=GBUM%20interest" rel="noopener" data-i18n="fbLink">Write to Peter</a></p>
+ </section>
+
+ <section class="close" aria-labelledby="h-close">
+  <div class="col">
+   <h2 id="h-close" data-i18n="cH">Unity Is More Than an Idea. It Is Work We Can Do Together.</h2>
+   <p data-i18n="cP1">Global unity begins when people choose to listen, build trust, share knowledge, and work toward a future that benefits generations to come.</p>
+   <p data-i18n="cP2">GBUM is beginning that journey. If you believe in a more connected, empowered, and collaborative global Black community, we invite you to learn about the movement and help shape its future.</p>
+   <p><a class="btn" href="#involved" data-i18n="cBtn">Explore GBUM / Express Interest</a></p>
+  </div>
  </section>
 </div>
 </main>
 
 <footer><div class="wrap">
- <p data-i18n="foot">GBUM is presented on this site by Peter Philentrope. It is a proposed movement with no registration, funding, partners, or results claimed.</p>
+ <p data-i18n="sep">GBUM is a distinct movement concept. FatherLeader Foundation and HaitiCard are separate, existing initiatives. This page does not imply ownership, control, legal affiliation, endorsement, or formal partnership between them and GBUM.</p>
+ <p data-i18n="foot">GBUM is an emerging movement presented on this site by Peter Philentrope. It has no registration, membership, funding, partners, or results to claim. Its future structure will be decided deliberately.</p>
  <p><a href="/" data-i18n="navHome">Home</a></p>
 </div></footer>
 
 <script>
 /* ===== Configuration =====
-   Set FORM_ENDPOINT to a real HTTPS form-handling URL you control (for example a free
-   Formspree or Getform form you create yourself, or a Vercel function). Endpoint URLs
-   are public by design. Never put API keys or secrets here.
-   While empty, the form stays hidden and the page shows an honest fallback. */
+   FORM_ENDPOINT: a real HTTPS form-handling address you control (for example a free
+   Formspree or Getform form you create yourself). Endpoint addresses are public by design.
+   Never put API keys or passwords here. While empty, the form stays hidden and the page
+   honestly says it is not active. */
 var FORM_ENDPOINT = "";
 
 var translations = {
-en:{skip:"Skip to content",navHome:"Home",navMission:"Mission",navPillars:"Pillars",navHaiti:"Haiti First",navVol:"Volunteer",
-eyebrow:"A proposed movement, now forming",title:"Global Black Unity Movement",tagline:"Unity Without Uniformity. Progress Through Cooperation.",
-heroP:"GBUM aims to connect Black communities in Haiti, Africa, the Caribbean, the Americas, Europe, and the wider diaspora through political accountability, economic cooperation, and community development.",
-ctaVol:"Express volunteer interest",missionH:"Mission",missionP:"To connect Black communities across borders so that they can hold power to account, cooperate economically, and build up their own communities, while respecting that each community has its own history, culture, and priorities.",
-visionH:"Vision",visionP:"A world where Black communities are connected by shared purpose and mutual respect, and where cooperation, not uniformity, drives progress.",
-pillarsH:"Three pillars",p1H:"Political accountability",p1P:"Encouraging transparency, civic participation, and responsible leadership in the places where we work.",
-p2H:"Economic cooperation",p2P:"Exploring ways for Black communities and businesses to share knowledge, trade, and opportunity across regions.",
-p3H:"Community development",p3P:"Supporting education and practical community needs, led by the people who live them.",
-haitiH:"Haiti first",haitiP:"GBUM intends to start in Haiti, beginning with education and practical community support, and to learn from that work before growing to other regions. No programs, results, or numbers are claimed here, because the movement is at the beginning.",
-prinH:"Principles",pr1:"Unity without uniformity: we cooperate across differences.",pr2:"Progress through cooperation, not rivalry.",pr3:"Honesty: we do not claim what has not happened.",pr4:"Community-led: local voices lead local work.",pr5:"Respect for every language, including Haitian Creole, French, and English.",
-relH:"Related, separate initiatives",rel1:"An existing, separate initiative supporting Haitian children's education. GBUM is a separate effort. This page does not imply ownership, control, legal affiliation, endorsement, or formal partnership.",
-rel2:"An existing, separate fintech initiative focused on digital payments in Haiti. GBUM is a separate effort. This page does not imply ownership, control, legal affiliation, endorsement, or formal partnership.",
-rolesH:"Proposed founding volunteer roles",rolesNote:"These roles are proposals only. No one has been appointed.",
-r1:"Haiti education coordinator",r2:"Translation lead (English, French, Haitian Creole)",r3:"Web and digital volunteer",r4:"Community outreach lead",r5:"Research and accountability analyst",r6:"Diaspora liaison",
-volH:"Volunteer interest",volP:"Interested in helping at the founding stage? Tell us a little about yourself. This is an expression of interest, not a commitment.",
-fName:"Name",fEmail:"Email",fLoc:"Country or region",fRole:"Role of interest",fAny:"Not sure yet",fLang:"Languages you speak",fMsg:"How would you like to help?",
-fConsent:"I agree that my details may be used only to contact me about GBUM volunteering.",fSend:"Send",
-fbText:"The online form is not active yet. For now you can reach out through the contact link on the main site:",fbLink:"Write to Peter",
-foot:"GBUM is presented on this site by Peter Philentrope. It is a proposed movement with no registration, funding, partners, or results claimed.",
-sending:"Sending...",ok:"Thank you. Your interest was sent.",err:"Sorry, it could not be sent. Please try again later.",invalid:"Please enter your name, a valid email, and accept the consent box."},
-fr:{skip:"Aller au contenu",navHome:"Accueil",navMission:"Mission",navPillars:"Piliers",navHaiti:"Haïti d'abord",navVol:"Bénévolat",
-eyebrow:"Un mouvement proposé, en formation",title:"Mouvement mondial d'unité des Noirs",tagline:"L'unité sans uniformité. Le progrès par la coopération.",
-heroP:"GBUM vise à relier les communautés noires d'Haïti, d'Afrique, des Caraïbes, des Amériques, d'Europe et de la diaspora au sens large, par la responsabilité politique, la coopération économique et le développement communautaire.",
-ctaVol:"Manifester son intérêt bénévole",missionH:"Mission",missionP:"Relier les communautés noires au-delà des frontières afin qu'elles puissent demander des comptes aux pouvoirs, coopérer économiquement et renforcer leurs propres communautés, tout en respectant l'histoire, la culture et les priorités de chacune.",
-visionH:"Vision",visionP:"Un monde où les communautés noires sont reliées par un but commun et un respect mutuel, et où la coopération, et non l'uniformité, fait avancer le progrès.",
-pillarsH:"Trois piliers",p1H:"Responsabilité politique",p1P:"Encourager la transparence, la participation citoyenne et un leadership responsable là où nous agissons.",
-p2H:"Coopération économique",p2P:"Explorer des moyens pour les communautés et entreprises noires de partager savoirs, échanges et opportunités entre les régions.",
-p3H:"Développement communautaire",p3P:"Soutenir l'éducation et les besoins pratiques des communautés, sous la conduite de celles et ceux qui les vivent.",
-haitiH:"Haïti d'abord",haitiP:"GBUM compte commencer en Haïti, par l'éducation et un soutien communautaire concret, et tirer les leçons de ce travail avant de s'étendre à d'autres régions. Aucun programme, résultat ou chiffre n'est revendiqué ici, car le mouvement en est à ses débuts.",
-prinH:"Principes",pr1:"L'unité sans uniformité : nous coopérons malgré nos différences.",pr2:"Le progrès par la coopération, pas par la rivalité.",pr3:"Honnêteté : nous ne revendiquons pas ce qui n'a pas eu lieu.",pr4:"Dirigé par les communautés : les voix locales mènent le travail local.",pr5:"Respect de toutes les langues, dont le créole haïtien, le français et l'anglais.",
-relH:"Initiatives liées, mais distinctes",rel1:"Une initiative existante et distincte qui soutient l'éducation des enfants haïtiens. GBUM est une démarche distincte. Cette page n'implique ni propriété, ni contrôle, ni affiliation juridique, ni parrainage, ni partenariat formel.",
-rel2:"Une initiative fintech existante et distincte axée sur les paiements numériques en Haïti. GBUM est une démarche distincte. Cette page n'implique ni propriété, ni contrôle, ni affiliation juridique, ni parrainage, ni partenariat formel.",
-rolesH:"Rôles bénévoles fondateurs proposés",rolesNote:"Ces rôles ne sont que des propositions. Personne n'a été nommé.",
-r1:"Coordinateur de l'éducation en Haïti",r2:"Responsable de la traduction (anglais, français, créole haïtien)",r3:"Bénévole web et numérique",r4:"Responsable de la mobilisation communautaire",r5:"Analyste recherche et redevabilité",r6:"Liaison avec la diaspora",
-volH:"Intérêt bénévole",volP:"Vous voulez aider dès la fondation ? Parlez-nous un peu de vous. Il s'agit d'une manifestation d'intérêt, pas d'un engagement.",
-fName:"Nom",fEmail:"Courriel",fLoc:"Pays ou région",fRole:"Rôle qui vous intéresse",fAny:"Pas encore sûr",fLang:"Langues parlées",fMsg:"Comment souhaitez-vous aider ?",
-fConsent:"J'accepte que mes informations servent uniquement à me contacter au sujet du bénévolat GBUM.",fSend:"Envoyer",
-fbText:"Le formulaire en ligne n'est pas encore actif. En attendant, vous pouvez écrire via le lien de contact du site principal :",fbLink:"Écrire à Peter",
-foot:"GBUM est présenté sur ce site par Peter Philentrope. C'est un mouvement proposé, sans enregistrement, financement, partenaires ni résultats revendiqués.",
-sending:"Envoi...",ok:"Merci. Votre intérêt a été envoyé.",err:"Désolé, l'envoi a échoué. Veuillez réessayer plus tard.",invalid:"Veuillez saisir votre nom, un courriel valide et cocher la case de consentement."},
-ht:{skip:"Ale nan kontni an",navHome:"Akèy",navMission:"Misyon",navPillars:"Pilye yo",navHaiti:"Ayiti dabò",navVol:"Volontè",
-eyebrow:"Yon mouvman ki pwopoze, k ap fòme",title:"Mouvman Inite Nwa Mondyal",tagline:"Inite san inifòmite. Pwogrè atravè kolaborasyon.",
-heroP:"GBUM vle konekte kominote nwa yo an Ayiti, Afrik, Karayib la, Amerik yo, Ewòp ak dyaspora a an jeneral, atravè responsabilite politik, kooperasyon ekonomik ak devlopman kominotè.",
-ctaVol:"Eksprime enterè volontè",missionH:"Misyon",missionP:"Konekte kominote nwa yo atravè fwontyè yo pou yo ka mande pouvwa yo rann kont, kolabore nan ekonomi, epi bati pwòp kominote yo, nan respekte istwa, kilti ak priyorite chak kominote.",
-visionH:"Vizyon",visionP:"Yon mond kote kominote nwa yo konekte pa yon menm objektif ak respè youn pou lòt, kote kolaborasyon, pa inifòmite, ap fè pwogrè.",
-pillarsH:"Twa pilye",p1H:"Responsabilite politik",p1P:"Ankouraje transparans, patisipasyon sitwayen ak lidèchip responsab kote nou travay.",
-p2H:"Kooperasyon ekonomik",p2P:"Chèche fason pou kominote ak biznis nwa yo pataje konesans, komès ak opòtinite ant rejyon yo.",
-p3H:"Devlopman kominotè",p3P:"Sipòte edikasyon ak bezwen pratik kominote yo, ak moun k ap viv yo ki dirije.",
-haitiH:"Ayiti dabò",haitiP:"GBUM gen entansyon kòmanse an Ayiti, ak edikasyon ak sipò pratik pou kominote a, epi aprann nan travay sa a anvan li grandi nan lòt rejyon. Nou pa reklame okenn pwogram, rezilta oswa chif isit la, paske mouvman an nan kòmansman.",
-prinH:"Prensip yo",pr1:"Inite san inifòmite: nou kolabore malgre diferans nou yo.",pr2:"Pwogrè atravè kolaborasyon, pa rivalite.",pr3:"Onètete: nou pa reklame sa ki pa fèt.",pr4:"Kominote a dirije: vwa lokal yo dirije travay lokal la.",pr5:"Respè pou tout lang, ki gen Kreyòl Ayisyen, Franse ak Anglè.",
-relH:"Inisyativ ki gen rapò, men ki separe",rel1:"Yon inisyativ ki deja egziste, ki separe, ki sipòte edikasyon timoun ayisyen yo. GBUM se yon lòt efò. Paj sa a pa vle di pwopriyete, kontwòl, afilyasyon legal, apwobasyon, oswa patenarya fòmèl.",
-rel2:"Yon inisyativ fintech ki deja egziste, ki separe, ki konsantre sou peman dijital an Ayiti. GBUM se yon lòt efò. Paj sa a pa vle di pwopriyete, kontwòl, afilyasyon legal, apwobasyon, oswa patenarya fòmèl.",
-rolesH:"Wòl volontè fondatè yo pwopoze",rolesNote:"Wòl sa yo se pwopozisyon sèlman. Pèsonn pa nonmen.",
-r1:"Kowòdonatè edikasyon an Ayiti",r2:"Responsab tradiksyon (Anglè, Franse, Kreyòl Ayisyen)",r3:"Volontè wèb ak dijital",r4:"Responsab mobilizasyon kominotè",r5:"Analis rechèch ak responsabilite",r6:"Lyezon dyaspora",
-volH:"Enterè volontè",volP:"Ou vle ede nan etap fondasyon an? Di nou yon ti kras sou ou. Sa a se yon eksprime enterè, pa yon angajman.",
-fName:"Non",fEmail:"Imèl",fLoc:"Peyi oswa rejyon",fRole:"Wòl ki enterese ou",fAny:"Poko sèten",fLang:"Lang ou pale",fMsg:"Kouman ou ta renmen ede?",
-fConsent:"Mwen dakò detay mwen yo itilize sèlman pou kontakte m sou volontarya GBUM.",fSend:"Voye",
-fbText:"Fòm anliy lan poko aktif. Pou kounye a, ou ka kontakte nou atravè lyen kontak sou sit prensipal la:",fbLink:"Ekri Peter",
-foot:"GBUM prezante sou sit sa a pa Peter Philentrope. Se yon mouvman ki pwopoze, san enskripsyon, finansman, patnè oswa rezilta nou reklame.",
-sending:"Ap voye...",ok:"Mèsi. Enterè ou voye.",err:"Dezole, pa t kapab voye. Tanpri eseye ankò pita.",invalid:"Tanpri antre non ou, yon imèl valid, epi make bwat konsantman an."}
+en:{skip:"Skip to content",navHome:"Home",navVision:"Vision",navMission:"Mission",navPillars:"Pillars",navPrin:"Principles",navInv:"Get Involved",
+title:"Global Black Unity Movement",tagline:"One People. Shared Progress. A Stronger Future.",
+heroP:"An emerging global movement bringing people together around Black unity, shared opportunity, and collective progress across generations.",
+ctaMission:"Explore Our Mission",ctaInv:"Get Involved",stage:"Current stage: Foundational development.",
+vKick:"Our vision",vH:"A More Connected and Empowered Global Community",
+vP1:"We envision a world in which Black people and communities are connected across borders, respected in their diversity, and equipped to create lasting progress for present and future generations.",
+vP2:"We believe that meaningful unity grows through trust, shared learning, cooperation, opportunity, and a willingness to work together while respecting our differences.",
+mKick:"Our mission",mH:"Turning Unity Into Meaningful Action",
+mP1:"The mission of the Global Black Unity Movement is to encourage global Black solidarity and constructive collaboration across the many areas of life that shape our future.",
+mP2:"Through dialogue, education, entrepreneurship, leadership development, cultural exchange, community initiatives, and responsible partnerships, GBUM aims to help transform shared aspirations into practical action.",
+mP3:"We are building the foundation for a movement that values both what unites us and the different experiences that make our communities unique.",
+plKick:"Proposed foundation",plH:"Our Seven Pillars",plNote:"These are the movement's proposed foundational pillars, not seven established operational programs.",
+p1H:"Political Empowerment and Civic Participation",p1P:"Encouraging civic education, responsible leadership, informed participation, representation, human rights, and constructive community advocacy.",
+p2H:"Economic Empowerment and Ownership",p2P:"Promoting entrepreneurship, financial literacy, professional networks, mentorship, job creation, responsible investment, and opportunities for Black-owned businesses to connect globally.",
+p3H:"Education, Knowledge, and Innovation",p3P:"Supporting educational opportunity, youth development, mentorship, digital skills, scientific advancement, research, and access to knowledge.",
+p4H:"Culture, Identity, and Heritage",p4P:"Celebrating the histories, languages, traditions, creativity, and achievements of African peoples and the global Black diaspora while respecting the diversity within our communities.",
+p5H:"Family and Community Wellbeing",p5P:"Promoting strong families, community care, health education, support for children and elders, and practical responses to local needs.",
+p6H:"Global Collaboration and Connection",p6P:"Building opportunities for people, professionals, educators, entrepreneurs, artists, and community groups to connect, exchange knowledge, and collaborate across borders.",
+p7H:"Justice, Dignity, and Sustainable Development",p7P:"Encouraging equal human dignity, fair opportunity, peaceful problem-solving, environmental responsibility, community resilience, and sustainable progress.",
+prKick:"Our principles",prH:"The Principles That Keep Us United",
+pr1H:"Unity Without Uniformity",pr1P:"We can share a purpose without sharing every opinion.",
+pr2H:"Dignity and Mutual Respect",pr2P:"Every person deserves respect and equal human dignity.",
+pr3H:"Collective Progress",pr3P:"We seek opportunities that strengthen communities as well as individuals.",
+pr4H:"Self-Determination and Responsibility",pr4P:"We encourage the skills, leadership, institutions, and resources needed to shape our future.",
+pr5H:"Integrity and Transparency",pr5P:"We value honesty in leadership, funding, commitments, and results.",
+pr6H:"Peaceful and Constructive Action",pr6P:"We pursue progress through learning, cooperation, community service, entrepreneurship, and lawful civic participation.",
+tKick:"Where we are today",tH:"A Movement in the Making",
+tP1:"GBUM is at the beginning of its journey. We are developing our founding principles, refining our vision, and exploring how people who share this mission can work together.",
+tP2:"We believe a credible movement should grow through trust, participation, accountability, and meaningful action, not promises alone.",
+tP3:"Our next step is to connect with people who share this vision, learn from their experiences, and identify practical opportunities to turn global unity into community-level progress.",
+iKick:"Get involved",iH:"Help Shape What Comes Next",
+iP:"GBUM's future will be shaped by people who believe that unity should lead to meaningful progress. Whether your experience is in education, business, technology, community service, culture, leadership, or another field, your perspective can contribute to the conversation.",
+i1:"Follow the movement's development.",i2:"Share ideas and feedback.",i3:"Contribute skills or professional experience.",i4:"Explore future volunteer opportunities.",i5:"Discuss potential community initiatives.",i6:"Help build connections with people who share the mission.",
+iNote:"These are invitations to express interest, not guarantees that formal opportunities or programs are already available.",
+fName:"Name",fEmail:"Email address",fCountry:"Country or region",req:"required",optl:"optional",fAreas:"Areas of interest",
+a1:"Following GBUM's development",a2:"Sharing ideas and feedback",a3:"Contributing skills or experience",a4:"Future volunteer opportunities",a5:"Community initiative ideas",a6:"Connecting with people who share the mission",
+fMsg:"What would you like to contribute or see GBUM accomplish?",
+priv:"Privacy notice: We will use your name, email address, and answers only to contact you about GBUM and to understand what people want from this movement. We will not publish your submission or personal information. Submissions are sent to the site owner through a form service. Please do not share sensitive personal details.",
+fConsent:"I have read the privacy notice and agree to be contacted about GBUM.",fSend:"Send",
+fbText:"The interest form is not active yet, so nothing can be submitted here. For now, you can reach out through the contact link on the main site:",fbLink:"Write to Peter",
+cH:"Unity Is More Than an Idea. It Is Work We Can Do Together.",
+cP1:"Global unity begins when people choose to listen, build trust, share knowledge, and work toward a future that benefits generations to come.",
+cP2:"GBUM is beginning that journey. If you believe in a more connected, empowered, and collaborative global Black community, we invite you to learn about the movement and help shape its future.",
+cBtn:"Explore GBUM / Express Interest",
+sep:"GBUM is a distinct movement concept. FatherLeader Foundation and HaitiCard are separate, existing initiatives. This page does not imply ownership, control, legal affiliation, endorsement, or formal partnership between them and GBUM.",
+foot:"GBUM is an emerging movement presented on this site by Peter Philentrope. It has no registration, membership, funding, partners, or results to claim. Its future structure will be decided deliberately.",
+sending:"Sending...",ok:"Thank you. Your interest was sent.",err:"Sorry, it could not be sent. Please try again later.",invalid:"Please enter your name, a valid email address, and check the consent box."},
+fr:{skip:"Aller au contenu",navHome:"Accueil",navVision:"Vision",navMission:"Mission",navPillars:"Piliers",navPrin:"Principes",navInv:"S'impliquer",
+title:"Mouvement mondial d'unité des Noirs",tagline:"Un seul peuple. Un progrès partagé. Un avenir plus fort.",
+heroP:"Un mouvement mondial émergent qui rassemble les personnes autour de l'unité des Noirs, d'opportunités partagées et d'un progrès collectif, de génération en génération.",
+ctaMission:"Découvrir notre mission",ctaInv:"S'impliquer",stage:"Étape actuelle : développement des fondations.",
+vKick:"Notre vision",vH:"Une communauté mondiale plus connectée et plus autonome",
+vP1:"Nous imaginons un monde où les personnes et les communautés noires sont reliées au-delà des frontières, respectées dans leur diversité et outillées pour créer un progrès durable pour les générations présentes et futures.",
+vP2:"Nous croyons qu'une unité véritable naît de la confiance, de l'apprentissage partagé, de la coopération, des opportunités et de la volonté de travailler ensemble tout en respectant nos différences.",
+mKick:"Notre mission",mH:"Transformer l'unité en action concrète",
+mP1:"La mission du Mouvement mondial d'unité des Noirs est d'encourager la solidarité noire mondiale et une collaboration constructive dans les nombreux domaines de la vie qui façonnent notre avenir.",
+mP2:"Par le dialogue, l'éducation, l'entrepreneuriat, le développement du leadership, les échanges culturels, les initiatives communautaires et des partenariats responsables, GBUM vise à transformer des aspirations communes en actions pratiques.",
+mP3:"Nous bâtissons les fondations d'un mouvement qui valorise à la fois ce qui nous unit et les expériences différentes qui rendent nos communautés uniques.",
+plKick:"Fondations proposées",plH:"Nos sept piliers",plNote:"Ce sont les piliers fondateurs proposés par le mouvement, et non sept programmes opérationnels déjà établis.",
+p1H:"Autonomisation politique et participation citoyenne",p1P:"Encourager l'éducation civique, un leadership responsable, une participation éclairée, la représentation, les droits humains et un plaidoyer communautaire constructif.",
+p2H:"Autonomisation économique et propriété",p2P:"Promouvoir l'entrepreneuriat, l'éducation financière, les réseaux professionnels, le mentorat, la création d'emplois, l'investissement responsable et les occasions pour les entreprises noires de se relier dans le monde.",
+p3H:"Éducation, savoir et innovation",p3P:"Soutenir l'accès à l'éducation, le développement de la jeunesse, le mentorat, les compétences numériques, l'avancement scientifique, la recherche et l'accès au savoir.",
+p4H:"Culture, identité et patrimoine",p4P:"Célébrer les histoires, les langues, les traditions, la créativité et les réalisations des peuples africains et de la diaspora noire mondiale, dans le respect de la diversité au sein de nos communautés.",
+p5H:"Bien-être des familles et des communautés",p5P:"Promouvoir des familles solides, l'entraide communautaire, l'éducation à la santé, le soutien aux enfants et aux aînés, et des réponses pratiques aux besoins locaux.",
+p6H:"Collaboration et connexion à l'échelle mondiale",p6P:"Créer des occasions pour que des personnes, des professionnels, des éducateurs, des entrepreneurs, des artistes et des groupes communautaires se connectent, échangent leurs savoirs et collaborent au-delà des frontières.",
+p7H:"Justice, dignité et développement durable",p7P:"Encourager l'égale dignité humaine, l'équité des chances, la résolution pacifique des problèmes, la responsabilité environnementale, la résilience des communautés et un progrès durable.",
+prKick:"Nos principes",prH:"Les principes qui nous gardent unis",
+pr1H:"L'unité sans uniformité",pr1P:"Nous pouvons partager un but sans partager toutes nos opinions.",
+pr2H:"Dignité et respect mutuel",pr2P:"Chaque personne mérite le respect et une égale dignité humaine.",
+pr3H:"Progrès collectif",pr3P:"Nous recherchons des opportunités qui renforcent les communautés autant que les individus.",
+pr4H:"Autodétermination et responsabilité",pr4P:"Nous encourageons les compétences, le leadership, les institutions et les ressources nécessaires pour façonner notre avenir.",
+pr5H:"Intégrité et transparence",pr5P:"Nous valorisons l'honnêteté dans la direction, le financement, les engagements et les résultats.",
+pr6H:"Action pacifique et constructive",pr6P:"Nous poursuivons le progrès par l'apprentissage, la coopération, le service communautaire, l'entrepreneuriat et la participation civique dans le cadre de la loi.",
+tKick:"Où nous en sommes aujourd'hui",tH:"Un mouvement en devenir",
+tP1:"GBUM en est au début de son parcours. Nous élaborons nos principes fondateurs, précisons notre vision et explorons comment les personnes qui partagent cette mission peuvent travailler ensemble.",
+tP2:"Nous croyons qu'un mouvement crédible doit grandir par la confiance, la participation, la redevabilité et l'action concrète, et non par de simples promesses.",
+tP3:"Notre prochaine étape est d'entrer en contact avec des personnes qui partagent cette vision, d'apprendre de leurs expériences et d'identifier des occasions pratiques de transformer l'unité mondiale en progrès au niveau des communautés.",
+iKick:"S'impliquer",iH:"Aidez à façonner la suite",
+iP:"L'avenir de GBUM sera façonné par celles et ceux qui croient que l'unité doit mener à un progrès concret. Que votre expérience soit en éducation, en affaires, en technologie, en service communautaire, en culture, en leadership ou dans un autre domaine, votre point de vue peut enrichir la conversation.",
+i1:"Suivre le développement du mouvement.",i2:"Partager des idées et des commentaires.",i3:"Apporter des compétences ou une expérience professionnelle.",i4:"Explorer de futures occasions de bénévolat.",i5:"Discuter d'éventuelles initiatives communautaires.",i6:"Aider à créer des liens avec des personnes qui partagent la mission.",
+iNote:"Ce sont des invitations à manifester son intérêt, et non des garanties que des occasions ou programmes officiels existent déjà.",
+fName:"Nom",fEmail:"Adresse courriel",fCountry:"Pays ou région",req:"obligatoire",optl:"facultatif",fAreas:"Domaines d'intérêt",
+a1:"Suivre le développement de GBUM",a2:"Partager des idées et des commentaires",a3:"Apporter des compétences ou de l'expérience",a4:"Futures occasions de bénévolat",a5:"Idées d'initiatives communautaires",a6:"Entrer en contact avec des personnes qui partagent la mission",
+fMsg:"Que souhaiteriez-vous apporter ou voir GBUM accomplir ?",
+priv:"Avis de confidentialité : nous utiliserons votre nom, votre adresse courriel et vos réponses uniquement pour vous contacter au sujet de GBUM et pour comprendre ce que les gens attendent de ce mouvement. Nous ne publierons ni votre envoi ni vos renseignements personnels. Les envois sont transmis au propriétaire du site par un service de formulaires. Veuillez ne pas partager de renseignements personnels sensibles.",
+fConsent:"J'ai lu l'avis de confidentialité et j'accepte d'être contacté(e) au sujet de GBUM.",fSend:"Envoyer",
+fbText:"Le formulaire d'intérêt n'est pas encore actif, donc rien ne peut être envoyé ici. En attendant, vous pouvez écrire via le lien de contact du site principal :",fbLink:"Écrire à Peter",
+cH:"L'unité est plus qu'une idée. C'est un travail que nous pouvons accomplir ensemble.",
+cP1:"L'unité mondiale commence quand des personnes choisissent d'écouter, de bâtir la confiance, de partager leurs savoirs et de travailler pour un avenir qui profitera aux générations à venir.",
+cP2:"GBUM commence ce parcours. Si vous croyez en une communauté noire mondiale plus connectée, plus autonome et plus solidaire, nous vous invitons à découvrir le mouvement et à contribuer à façonner son avenir.",
+cBtn:"Découvrir GBUM / Manifester son intérêt",
+sep:"GBUM est un concept de mouvement distinct. FatherLeader Foundation et HaitiCard sont des initiatives existantes et distinctes. Cette page n'implique ni propriété, ni contrôle, ni affiliation juridique, ni parrainage, ni partenariat formel entre elles et GBUM.",
+foot:"GBUM est un mouvement émergent présenté sur ce site par Peter Philentrope. Il n'a aucun enregistrement, aucun membre, aucun financement, aucun partenaire ni aucun résultat à revendiquer. Sa future structure sera décidée avec réflexion.",
+sending:"Envoi...",ok:"Merci. Votre intérêt a été envoyé.",err:"Désolé, l'envoi a échoué. Veuillez réessayer plus tard.",invalid:"Veuillez saisir votre nom, une adresse courriel valide et cocher la case de consentement."},
+ht:{skip:"Ale nan kontni an",navHome:"Akèy",navVision:"Vizyon",navMission:"Misyon",navPillars:"Pilye yo",navPrin:"Prensip yo",navInv:"Patisipe",
+title:"Mouvman Inite Nwa Mondyal",tagline:"Yon sèl pèp. Pwogrè pataje. Yon avni pi solid.",
+heroP:"Yon mouvman mondyal k ap fòme ki rasanble moun otou inite nwa, opòtinite pataje ak pwogrè kolektif, de jenerasyon an jenerasyon.",
+ctaMission:"Dekouvri misyon nou",ctaInv:"Patisipe",stage:"Etap kounye a: devlopman fondasyon an.",
+vKick:"Vizyon nou",vH:"Yon kominote mondyal ki pi konekte epi ki gen plis fòs",
+vP1:"Nou imajine yon mond kote moun ak kominote nwa konekte atravè fwontyè yo, yo respekte divèsite yo, epi yo gen sa yo bezwen pou kreye pwogrè ki dire pou jenerasyon kounye a ak jenerasyon k ap vini yo.",
+vP2:"Nou kwè yon vrè inite grandi grasa konfyans, aprantisaj ansanm, kolaborasyon, opòtinite, ak volonte pou travay ansanm pandan nou respekte diferans nou yo.",
+mKick:"Misyon nou",mH:"Chanje inite an aksyon ki konkrè",
+mP1:"Misyon Mouvman Inite Nwa Mondyal la se ankouraje solidarite nwa nan monn lan ak yon kolaborasyon ki konstriktif nan anpil domèn nan lavi ki fòme avni nou.",
+mP2:"Grasa dyalòg, edikasyon, antreprenarya, devlopman lidèchip, echanj kiltirèl, inisyativ kominotè ak patenarya responsab, GBUM vle ede chanje aspirasyon nou pataje yo an aksyon pratik.",
+mP3:"Nou ap bati fondasyon yon mouvman ki bay valè a sa ki ini nou ansanm ak eksperyans diferan ki fè kominote nou yo inik.",
+plKick:"Fondasyon yo pwopoze",plH:"Sèt pilye nou yo",plNote:"Sa yo se pilye fondatè mouvman an pwopoze yo, yo pa sèt pwogram operasyonèl ki deja etabli.",
+p1H:"Fòtifikasyon politik ak patisipasyon sitwayen",p1P:"Ankouraje edikasyon sivik, lidèchip responsab, patisipasyon enfòme, reprezantasyon, dwa moun, ak defans kominotè ki konstriktif.",
+p2H:"Fòtifikasyon ekonomik ak pwopriyete",p2P:"Pwomouvwa antreprenarya, edikasyon finansye, rezo pwofesyonèl, akonpayman, kreyasyon travay, envestisman responsab, ak opòtinite pou biznis ki pou nwa yo konekte nan mond lan.",
+p3H:"Edikasyon, konesans ak inovasyon",p3P:"Sipòte opòtinite edikasyon, devlopman jèn yo, akonpayman, konpetans dijital, avansman syantifik, rechèch, ak aksè a konesans.",
+p4H:"Kilti, idantite ak eritaj",p4P:"Selebre istwa, lang, tradisyon, kreyativite ak reyalizasyon pèp afriken yo ak dyaspora nwa a nan mond lan, pandan nou respekte divèsite ki genyen nan kominote nou yo.",
+p5H:"Byennèt fanmi ak kominote",p5P:"Pwomouvwa fanmi solid, swen kominotè, edikasyon sou sante, sipò pou timoun ak granmoun aje, ak repons pratik a bezwen lokal yo.",
+p6H:"Kolaborasyon ak koneksyon atravè mond lan",p6P:"Kreye opòtinite pou moun, pwofesyonèl, edikatè, antreprenè, atis ak gwoup kominotè konekte, chanje konesans, epi kolabore atravè fwontyè yo.",
+p7H:"Jistis, diyite ak devlopman dirab",p7P:"Ankouraje menm diyite imen pou tout moun, chans ki jis, rezoud pwoblèm yo ak lapè, responsabilite anvè anviwònman an, rezilyans kominote yo, ak pwogrè ki dire.",
+prKick:"Prensip nou yo",prH:"Prensip ki kenbe nou ini",
+pr1H:"Inite san inifòmite",pr1P:"Nou ka gen yon menm objektif san nou pa gen menm opinyon sou tout bagay.",
+pr2H:"Diyite ak respè youn pou lòt",pr2P:"Chak moun merite respè ak menm diyite imen.",
+pr3H:"Pwogrè kolektif",pr3P:"Nou chèche opòtinite ki fòtifye kominote yo menm jan ak chak moun.",
+pr4H:"Otodetèminasyon ak responsabilite",pr4P:"Nou ankouraje konpetans, lidèchip, enstitisyon ak resous nou bezwen pou nou fòme avni nou.",
+pr5H:"Entegrite ak transparans",pr5P:"Nou bay valè a onètete nan lidèchip, finansman, angajman ak rezilta.",
+pr6H:"Aksyon lapè ak konstriktif",pr6P:"Nou chèche pwogrè grasa aprantisaj, kolaborasyon, sèvis kominotè, antreprenarya, ak patisipasyon sivik nan respè lalwa.",
+tKick:"Kote nou ye jodi a",tH:"Yon mouvman k ap fèt",
+tP1:"GBUM nan kòmansman vwayaj li. Nou ap devlope prensip fondatè nou yo, nou ap pèfeksyone vizyon nou, epi nou ap chèche kijan moun ki pataje misyon sa a ka travay ansanm.",
+tP2:"Nou kwè yon mouvman serye dwe grandi grasa konfyans, patisipasyon, responsabilite ak aksyon ki konkrè, pa sèlman ak pwomès.",
+tP3:"Pwochen etap nou se antre an kontak ak moun ki pataje vizyon sa a, aprann nan eksperyans yo, epi idantifye opòtinite pratik pou chanje inite mondyal la an pwogrè nan nivo kominote yo.",
+iKick:"Patisipe",iH:"Ede fòme sa ki pral vini an",
+iP:"Se moun ki kwè inite dwe mennen nan pwogrè ki konkrè ki pral fòme avni GBUM. Kit eksperyans ou nan edikasyon, biznis, teknoloji, sèvis kominotè, kilti, lidèchip oswa yon lòt domèn, pwen de vi ou ka kontribye nan konvèsasyon an.",
+i1:"Swiv devlopman mouvman an.",i2:"Pataje lide ak kòmantè.",i3:"Kontribye konpetans oswa eksperyans pwofesyonèl.",i4:"Eksplore opòtinite volontarya nan lavni.",i5:"Diskite sou posib inisyativ kominotè.",i6:"Ede kreye koneksyon ak moun ki pataje misyon an.",
+iNote:"Sa yo se envitasyon pou eksprime enterè, yo pa garanti ke opòtinite oswa pwogram fòmèl deja disponib.",
+fName:"Non",fEmail:"Adrès imèl",fCountry:"Peyi oswa rejyon",req:"obligatwa",optl:"opsyonèl",fAreas:"Domèn enterè",
+a1:"Swiv devlopman GBUM",a2:"Pataje lide ak kòmantè",a3:"Kontribye konpetans oswa eksperyans",a4:"Opòtinite volontarya nan lavni",a5:"Lide pou inisyativ kominotè",a6:"Konekte ak moun ki pataje misyon an",
+fMsg:"Kisa ou ta renmen kontribye oswa wè GBUM akonpli?",
+priv:"Avi konfidansyalite: Nou pral itilize non ou, adrès imèl ou ak repons ou yo sèlman pou kontakte ou sou GBUM epi pou konprann sa moun vle nan mouvman sa a. Nou pa pral pibliye mesaj ou voye a ni enfòmasyon pèsonèl ou. Mesaj yo voye bay mèt sit la atravè yon sèvis fòm. Tanpri pa pataje enfòmasyon pèsonèl ki sansib.",
+fConsent:"Mwen li avi konfidansyalite a epi mwen dakò pou yo kontakte m sou GBUM.",fSend:"Voye",
+fbText:"Fòm enterè a poko aktif, kidonk pa gen anyen ki ka voye isit la. Pou kounye a, ou ka kontakte nou atravè lyen kontak sou sit prensipal la:",fbLink:"Ekri Peter",
+cH:"Inite plis pase yon lide. Se yon travay nou ka fè ansanm.",
+cP1:"Inite mondyal kòmanse lè moun chwazi koute, bati konfyans, pataje konesans, epi travay pou yon avni ki pral benefisye jenerasyon k ap vini yo.",
+cP2:"GBUM ap kòmanse vwayaj sa a. Si ou kwè nan yon kominote nwa mondyal ki pi konekte, ki gen plis fòs, epi ki pi solidè, nou envite ou dekouvri mouvman an epi ede fòme avni li.",
+cBtn:"Dekouvri GBUM / Eksprime enterè",
+sep:"GBUM se yon konsèp mouvman ki apa. FatherLeader Foundation ak HaitiCard se inisyativ ki deja egziste epi ki separe. Paj sa a pa vle di pwopriyete, kontwòl, afilyasyon legal, apwobasyon, oswa patenarya fòmèl ant yo ak GBUM.",
+foot:"GBUM se yon mouvman k ap fòme ki prezante sou sit sa a pa Peter Philentrope. Li pa gen okenn enskripsyon, manm, finansman, patnè oswa rezilta pou reklame. Y ap deside estrikti li pral genyen pita ak anpil reflechi.",
+sending:"Ap voye...",ok:"Mèsi. Enterè ou voye.",err:"Dezole, pa t kapab voye. Tanpri eseye ankò pita.",invalid:"Tanpri antre non ou, yon adrès imèl ki valid, epi make bwat konsantman an."}
 };
 
 var cur="en";
@@ -236,13 +377,13 @@ function setLang(l){
   document.documentElement.lang=l;
   document.querySelectorAll("[data-i18n]").forEach(function(el){el.textContent=t(el.getAttribute("data-i18n"))});
   document.querySelectorAll(".langsw button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.lang===l?"true":"false")});
-  document.title=t("title")+" (GBUM)";
+  document.title="GBUM | "+t("title");
   try{localStorage.setItem("lang",l)}catch(e){}
   try{var u=new URL(location.href);u.searchParams.set("lang",l);history.replaceState(null,"",u)}catch(e){}
 }
 document.querySelectorAll(".langsw button").forEach(function(b){b.addEventListener("click",function(){setLang(b.dataset.lang)})});
 
-var form=document.getElementById("volForm"),statusEl=document.getElementById("formStatus"),fb=document.getElementById("fallback");
+var form=document.getElementById("interestForm"),statusEl=document.getElementById("formStatus"),fb=document.getElementById("fallback");
 function show(msg,cls){statusEl.hidden=false;statusEl.className="status "+cls;statusEl.textContent=msg}
 if(FORM_ENDPOINT&&/^https:\/\//.test(FORM_ENDPOINT)){form.hidden=false}else{fb.hidden=false}
 form.addEventListener("submit",function(e){
